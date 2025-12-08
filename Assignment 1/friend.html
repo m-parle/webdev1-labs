@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Recruitment</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui/dist/semantic.min.js"></script>
+    <script>
+    $('.ui.dropdown').dropdown();
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-menu">
+<div class="ui compact menu">
+  <div class="ui simple dropdown item">
+    Menu
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <a class="item" href="home.html">Home</a>
+      <a class="item" href="about.html">About Me</a>
+      <a class="item" href="hobbies.html">Interests</a>
+      <a class="item" href="education.html">Education</a>
+      <a class="item" href="travel.html">Travel</a>
+      <a class="item" href="work.html">Work</a>
+      <a class="item" href="media.html">Media</a>
+      <a class="item" href="friend.html">Friend Application</a>
+    </div>
+  </div>
+</div>
+</header>
+
+<div class="friend-wrapper">
+<div class="form-container">
+    <h1>Friend Recruitment Form</h1>
+
+<form action="friend.html">
+
+<div class="form-grid">
+    <div class="form-group">
+        <label for="name">Full Name*</label>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z ]{1,30}" title="Please enter 1-30 letters.">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required title="Please enter a valid email.">
+    </div>
+
+    <div class="form-group">
+        <label for="tel">Phone Number*</label>
+        <input type="tel" id="tel" name="tel" required title="Please enter a valid email.">
+    </div>
+
+    <div class="form-group">
+        <label for="age">Age*</label>
+        <input type="number" id="age" name="age" min="10" max="100" required title="Please enter an age between 10-100.">
+    </div>
+
+    <div class="form-group color-group">
+        <label for="color">Favourite Colour</label>
+        <input type="color" id="color" name="color">
+    </div>
+
+    <div class="form-group">
+        <label>Preferred Contact Method*</label>
+        <div class="inline-options">
+            <label><input type="radio" name="contact" value="email" required>Email</label>
+            <label><input type="radio" name="contact" value="phone">Phone</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Why do you want to be friends?</label>
+        <textarea id="message" name="message"></textarea>
+    </div>
+
+
+    <div class="actions">
+        <button class="btn-reset" type="reset">Reset Form</button>
+        <button class="btn-submit" type="submit">Submit Application</button>
+    </div>
+</div>
+</form>
+</div>
+<footer> &#x24B8; 2025 Molly Parle</footer>
+</body>
+</html>
